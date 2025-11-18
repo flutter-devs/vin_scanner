@@ -31,10 +31,8 @@ doc/api/
 /shelf/
 /workspace.xml
 # Build and dependency artifacts
-.dart_tool/
-.packages
+
 .pub/
-build/
 
 # IDE and editor files
 .vscode/
@@ -42,8 +40,6 @@ build/
 .DS_Store
 
 # Flutter plugin and generated files
-.flutter-plugins
-.flutter-plugins-dependencies
 .mel
 .metadata
 
@@ -58,7 +54,6 @@ android/captures/
 android/key.properties
 
 # pub version lock file (for package, NOT apps)
-pubspec.lock
 
 # Examples and test output (if desired)
 example/build/

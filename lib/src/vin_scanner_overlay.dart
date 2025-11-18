@@ -28,7 +28,10 @@ class BarcodeScannerOverlay extends StatelessWidget {
                   flex: 4,
                   child: Container(
                     decoration: BoxDecoration(
-                      border: Border.all(color: borderColor, width: borderWidth),
+                      border: Border.all(
+                        color: borderColor,
+                        width: borderWidth,
+                      ),
                     ),
                   ),
                 ),

@@ -1,6 +1,6 @@
 name: vin_scanner
-description: "Vin Scanner"
-version: 0.0.1
+description: '''Multipurpose scanner that scans 2D barcodes and can be used in any orientation, this also supports orientation lock for camera'''
+version: 0.0.2
 homepage: https://github.com/flutter-devs/vin_scanner.git
 
 environment:
@@ -11,9 +11,9 @@ dependencies:
   flutter:
     sdk: flutter
 
-  camera: ^0.11.0+2
-  google_mlkit_barcode_scanning: ^0.12.0
-  permission_handler: ^11.3.1
+  camera: ^0.11.3
+  google_mlkit_barcode_scanning: ^0.12.1
+  permission_handler: ^11.4.0
 
 dev_dependencies:
   flutter_test:

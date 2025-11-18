@@ -47,19 +47,15 @@ app.*.map.json
 /shelf/
 /workspace.xml
 # Build and dependency artifacts
-.dart_tool/
 .packages
-.pub/
 build/
 
 # IDE and editor files
 .vscode/
-.idea/
-.DS_Store
+
 
 # Flutter plugin and generated files
 .flutter-plugins
-.flutter-plugins-dependencies
 .mel
 .metadata
 
@@ -89,7 +85,6 @@ test/output/
 coverage/
 
 # Miscellaneous
-*.swp
 *.bak
 *.tmp
 

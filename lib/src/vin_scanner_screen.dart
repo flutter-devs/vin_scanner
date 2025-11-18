@@ -45,9 +45,7 @@ class _BarcodeScannerScreenState extends State<BarcodeScannerScreen>
     super.initState();
 
     WidgetsBinding.instance.addObserver(this);
-    SystemChrome.setPreferredOrientations([
-      DeviceOrientation.portraitUp,
-    ]);
+    SystemChrome.setPreferredOrientations([DeviceOrientation.portraitUp]);
     _controller = BarcodeScannerController(
       lensDirection: widget.lensDirection,
       resolutionPreset: widget.resolutionPreset,
