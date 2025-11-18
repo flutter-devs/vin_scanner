@@ -1,41 +1,64 @@
-<!Barcode Scanner Package
-A Flutter package providing a customizable, easy-to-use barcode scanner widget powered by Google ML Kit and Flutter’s camera plugin. This package supports live camera feed barcode scanning with flexible configuration options such as camera orientation lock, resolution presets, overlay styling, and frame processing rate. It is ideal for developers looking to quickly integrate barcode scanning features into their Flutter apps with robust performance and clean UI.
+Barcode Scanner Package
 
-## Features
+A Flutter package providing a customizable and easy-to-use barcode scanner widget powered by Google ML Kit and Flutter’s camera plugin.
+This package supports real-time barcode scanning with options for orientation lock, camera selection, resolution configuration, overlay customization, and performance-optimized frame processing.
 
-    •	Live barcode scanning using device camera with Google ML Kit integration
-	•	Supports front and back cameras (configurable)
-	•	Orientation lock option for portrait or landscape modes
-	•	Adjustable camera resolution and audio enable/disable
-	•	Frame processing throttling to optimize performance
-	•	Customizable scanning overlay with configurable mask color, border color, and border width
-	•	Callback for detected barcode data including barcode type
-	•	Supports iOS and Android platforms with native image processing formats handled
-	•	Example app included demonstrating package usage
+Features
 
+Live barcode scanning using the device camera (Google ML Kit)
 
-## Getting started
+Supports front and back cameras
 
+Optional orientation lock (portrait or landscape)
+
+Configurable camera resolution
+
+Audio enable/disable
+
+Frame processing throttling to improve performance
+
+Fully customizable scanning overlay:
+
+Mask color
+
+Border color
+
+Border width
+
+Callback with detected barcode value and type
+
+Supports iOS & Android
+
+Example app included
+
+Getting Started
 Prerequisites
 
-    •	Flutter SDK installed (version 3.x or later recommended)
-	•	Device with camera support (real devices preferred for scanning)
-	•	Google ML Kit dependencies handled automatically by the package
-	•	Add required app permissions for camera usage in AndroidManifest.xml (Android) and Info.plist (iOS).
+Flutter SDK 3.x or later
+
+Device with camera capabilities
+
+Google ML Kit dependencies handled automatically
+
+Add necessary permissions:
+
+Android: AndroidManifest.xml
+
+iOS: Info.plist
 
 Installation
 
-Add this package to your  pubspec.yaml  dependencies:
+Add the package to your pubspec.yaml:
 
-    dependencies: 
-      barcode_scanner: ^0.0.1
+dependencies:
+  barcode_scanner: ^0.0.1
 
-Run  flutter pub get  to install the package.
 
-## Usage
+Run:
 
-Import the package and use the ready-to-use  BarcodeScannerScreen  widget:
+flutter pub get
 
+Usage Example
 import 'package:barcode_scanner/barcode_scanner.dart';
 import 'package:flutter/material.dart';
 
@@ -66,18 +89,27 @@ class MyApp extends StatelessWidget {
   }
 }
 
-Longer and more detailed examples are available in the  /example  folder provided with the package.
 
+Additional example code can be found in the example/ folder included with the package.
 
-```dart
 const like = 'vin_scanner';
-```
 
-## Additional information
+Additional Information
 
-For more info, visit the GitHub repository (replace with actual URL).
-	•	Contributions are welcome via pull requests or issues opened on GitHub.
-	•	When filing issues, please include Flutter and package versions, device details, and reproduction steps.
-	•	This package is licensed under the MIT License. See the LICENSE file for details.
-	•	For updates, changelog, and release notes, refer to the  CHANGELOG.md  file.
-	•	If you want to customize barcode detection further, consider extending the controller or contributing features.
+Visit the GitHub repository for documentation and updates (replace with actual URL).
+
+Contributions are welcome through issues or pull requests.
+
+When reporting issues, include:
+
+Flutter version
+
+Package version
+
+Device model
+
+Clear reproduction steps
+
+Licensed under the MIT License
+
+Advanced users may extend the controller for deeper customization
