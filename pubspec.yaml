@@ -1,5 +1,7 @@
 name: vin_scanner
-description: '''Multipurpose scanner that scans 2D barcodes and can be used in any orientation, this also supports orientation lock for camera'''
+description: ''' A customizable Flutter widget for live barcode scanning using Google ML Kit and the device camera.
+  Supports front and back cameras with orientation lock, resolution presets, overlay styling,
+  and configurable frame processing rate. Ideal for quick integration of barcode scanning features. This works for both Android & iOS.'''
 version: 0.0.2
 homepage: https://github.com/flutter-devs/vin_scanner.git
 

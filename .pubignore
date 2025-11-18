@@ -1,0 +1,5 @@
+# Ignore example metadata
+example/.metadata
+
+# Ignore iOS workspace files in example folder
+example/ios/Runner.xcworkspace/
