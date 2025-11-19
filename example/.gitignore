@@ -53,17 +53,21 @@ build/
 # IDE and editor files
 .vscode/
 
-
 # Flutter plugin and generated files
 .flutter-plugins
 .mel
-.metadata
+
+# Ignore .metadata in example folder
+example/.metadata
 
 # macOS/iOS/Android platform directories
 ios/Flutter/Generated.xcconfig
 ios/Pods/
 ios/.symlinks/
-ios/Runner.xcworkspace/
+
+# Ignore iOS workspace folders in example
+example/ios/Runner.xcworkspace/
+
 macos/Flutter/
 android/.gradle/
 android/captures/
@@ -87,4 +91,3 @@ coverage/
 # Miscellaneous
 *.bak
 *.tmp
-
