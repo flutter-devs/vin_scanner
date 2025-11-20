@@ -7,4 +7,7 @@
 - Minor changes to license file, and description.
 
 ## 0.0.3 - 2025-11-19
-- Package updated to stable versions
+- Package updated to stable versions.
+
+## 0.0.4 - 2025-11-20
+- Minor changes.
