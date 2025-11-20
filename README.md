@@ -47,14 +47,16 @@ Example app included
 #### Android (AndroidManifest.xml)
 ```xml
 <uses-permission android:name="android.permission.CAMERA"/>
+```
 
 #### iOS (info.plist)
-``` <key>NSCameraUsageDescription</key>
+```<key>NSCameraUsageDescription</key>
 <string>Camera access is required for barcode scanning.</string>
+```
 
 # Installation
 
-Add the package to your pubspec.yaml:
+#### Add the package to your pubspec.yaml:
 
 > dependencies:
   barcode_scanner: ^0.0.1
@@ -91,7 +93,7 @@ class MyApp extends StatelessWidget {
     );
   }
 }
-
+```
 
 Additional example code can be found in the example/ folder included with the package.
 
