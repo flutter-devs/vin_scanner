@@ -11,3 +11,6 @@
 
 ## 0.0.4 - 2025-11-20
 - Minor changes.
+
+## 0.0.5 - 2025-11-20
+- Readme updated.

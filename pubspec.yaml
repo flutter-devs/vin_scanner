@@ -1,6 +1,6 @@
 name: vin_scanner
 description: '''A customizable Flutter widget for barcode scanning. Supports orientation lock, resolution presets, overlay styling, and configurable frame processing rate.'''
-version: 0.0.4
+version: 0.0.5
 homepage: https://github.com/flutter-devs/vin_scanner.git
 
 environment:
