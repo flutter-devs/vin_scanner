@@ -1,74 +1,77 @@
-Barcode Scanner Package
+# Barcode Scanner Package
 
-A Flutter package providing a customizable and easy-to-use barcode scanner widget powered by Google ML Kit and Flutter’s camera plugin.
-This package supports real-time barcode scanning with options for orientation lock, camera selection, resolution configuration, overlay customization, and performance-optimized frame processing.
+### A Flutter package providing a customizable and easy-to-use barcode scanner widget powered by Google ML Kit and Flutter’s camera plugin.
+#### This package supports real-time barcode scanning with options for orientation lock, camera selection, resolution configuration, overlay customization, and performance-optimized frame processing.
 
-Features
+# Features
 
-Live barcode scanning using the device camera (Google ML Kit)
+- Live barcode scanning using the device camera (Google ML Kit)
 
-Supports front and back cameras
+- Supports front and back cameras
 
-Optional orientation lock (portrait or landscape)
+- Optional orientation lock (portrait or landscape)
 
-Configurable camera resolution
+- Configurable camera resolution
 
-Audio enable/disable
+- Audio enable/disable
 
-Frame processing throttling to improve performance
+- Frame processing throttling to improve performance
 
-Fully customizable scanning overlay:
+- Fully customizable scanning overlay:
 
-Mask color
+- Mask color
 
-Border color
+- Border color
 
-Border width
+- Border width
 
-Callback with detected barcode value and type
+- Callback with detected barcode value and type
 
-Supports iOS & Android
+- Supports iOS & Android
 
 Example app included
 
-Getting Started
-Prerequisites
+# Getting Started
+### Prerequisites
 
-Flutter SDK 3.x or later
+> Flutter SDK 3.x or later
 
-Device with camera capabilities
+> Device with camera capabilities
 
-Google ML Kit dependencies handled automatically
+> Google ML Kit dependencies handled automatically
 
-Add necessary permissions:
+> Add necessary permissions:
 
-Android: AndroidManifest.xml
+### Permissions
 
-iOS: Info.plist
+#### Android (AndroidManifest.xml)
+```xml
+<uses-permission android:name="android.permission.CAMERA"/>
 
-Installation
+#### iOS (info.plist)
+``` <key>NSCameraUsageDescription</key>
+<string>Camera access is required for barcode scanning.</string>
+
+# Installation
 
 Add the package to your pubspec.yaml:
 
-dependencies:
+> dependencies:
   barcode_scanner: ^0.0.1
 
 
-Run:
+### Run:
 
-flutter pub get
+> flutter pub get
 
-Usage Example
+``` Usage Example
 import 'package:barcode_scanner/barcode_scanner.dart';
 import 'package:flutter/material.dart';
-
 void main() {
   runApp(const MyApp());
 }
-
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
-
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -94,22 +97,22 @@ Additional example code can be found in the example/ folder included with the pa
 
 const like = 'vin_scanner';
 
-Additional Information
+# Additional Information
 
-Visit the GitHub repository for documentation and updates (replace with actual URL).
+- Visit the GitHub repository for documentation and updates (replace with actual URL).
 
-Contributions are welcome through issues or pull requests.
+- Contributions are welcome through issues or pull requests.
 
-When reporting issues, include:
+- When reporting issues, include:
 
-Flutter version
+- Flutter version
 
-Package version
+- Package version
 
-Device model
+- Device model
 
-Clear reproduction steps
+- Clear reproduction steps
 
-Licensed under the MIT License
+- Licensed under the MIT License
 
-Advanced users may extend the controller for deeper customization
+- Advanced users may extend the controller for deeper customization
