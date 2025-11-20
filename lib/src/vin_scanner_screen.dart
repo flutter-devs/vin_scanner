@@ -153,44 +153,44 @@ class _BarcodeScannerScreenState extends State<BarcodeScannerScreen>
     return Scaffold(
       body: _cameraReady && _controller.isInitialized
           ? Stack(
-        children: [
-          // Camera preview fills entire screen.
-          Positioned.fill(
-            child: CameraPreview(_controller.cameraController!),
-          ),
-
-          // Overlay with scanning frame and shaded edges.
-          BarcodeScannerOverlay(
-            overlayColor: widget.overlayColor,
-            borderColor: widget.overlayBorderColor,
-            borderWidth: widget.overlayBorderWidth,
-          ),
-
-          // Display detected barcode value in a fixed-position info box.
-          if (_controller.detectedBarcode != null)
-            Positioned(
-              bottom: 100,
-              left: 20,
-              right: 20,
-              child: Container(
-                padding: const EdgeInsets.all(16),
-                decoration: BoxDecoration(
-                  color: Colors.green,
-                  borderRadius: BorderRadius.circular(8),
+              children: [
+                // Camera preview fills entire screen.
+                Positioned.fill(
+                  child: CameraPreview(_controller.cameraController!),
                 ),
-                child: Text(
-                  'Detected: ${_controller.detectedBarcode!}',
-                  style: const TextStyle(
-                    color: Colors.white,
-                    fontSize: 16,
-                    fontWeight: FontWeight.bold,
+
+                // Overlay with scanning frame and shaded edges.
+                BarcodeScannerOverlay(
+                  overlayColor: widget.overlayColor,
+                  borderColor: widget.overlayBorderColor,
+                  borderWidth: widget.overlayBorderWidth,
+                ),
+
+                // Display detected barcode value in a fixed-position info box.
+                if (_controller.detectedBarcode != null)
+                  Positioned(
+                    bottom: 100,
+                    left: 20,
+                    right: 20,
+                    child: Container(
+                      padding: const EdgeInsets.all(16),
+                      decoration: BoxDecoration(
+                        color: Colors.green,
+                        borderRadius: BorderRadius.circular(8),
+                      ),
+                      child: Text(
+                        'Detected: ${_controller.detectedBarcode!}',
+                        style: const TextStyle(
+                          color: Colors.white,
+                          fontSize: 16,
+                          fontWeight: FontWeight.bold,
+                        ),
+                        textAlign: TextAlign.center,
+                      ),
+                    ),
                   ),
-                  textAlign: TextAlign.center,
-                ),
-              ),
-            ),
-        ],
-      )
+              ],
+            )
           : const Center(child: CircularProgressIndicator()),
     );
   }

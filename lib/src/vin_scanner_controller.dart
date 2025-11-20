@@ -55,7 +55,7 @@ class BarcodeScannerController {
   Future<void> initCamera() async {
     final cameras = await availableCameras();
     final camera = cameras.firstWhere(
-          (c) => c.lensDirection == lensDirection,
+      (c) => c.lensDirection == lensDirection,
       orElse: () => cameras.first,
     );
 
@@ -152,17 +152,17 @@ class BarcodeScannerController {
       final bytes = image.planes.first.bytes;
 
       return InputImage.fromBytes(
-          bytes: bytes,
-          metadata: InputImageMetadata(
-      size: Size(image.width.toDouble(), image.height.toDouble()),
-    rotation: rotation,
-    format: format,
-    bytesPerRow: image.planes.first.bytesPerRow,
-    ),
-    );
+        bytes: bytes,
+        metadata: InputImageMetadata(
+          size: Size(image.width.toDouble(), image.height.toDouble()),
+          rotation: rotation,
+          format: format,
+          bytesPerRow: image.planes.first.bytesPerRow,
+        ),
+      );
     } catch (e) {
-    debugPrint('❌ Error building InputImage: $e');
-    return null;
+      debugPrint('❌ Error building InputImage: $e');
+      return null;
     }
   }
 
