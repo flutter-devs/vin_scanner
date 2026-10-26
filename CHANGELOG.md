@@ -14,3 +14,6 @@
 
 ## 0.0.5 - 2025-11-20
 - Readme updated.
+
+## 0.0.6 - 2026-10-26
+- Packages upgraded.
